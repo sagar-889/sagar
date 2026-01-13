@@ -17,11 +17,11 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Resume />
         <Projects />
         <Skills />
         <Involvement />
         <Contact />
-        <Resume />
       </main>
       <Footer />
     </div>

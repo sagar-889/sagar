@@ -14,7 +14,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = ['About', 'Projects', 'Skills', 'Involvement', 'Contact', 'Resume']
+  const navItems = ['About', 'Resume', 'Projects', 'Skills', 'Involvement', 'Contact']
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
