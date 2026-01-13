@@ -1,0 +1,41 @@
+.involvement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.involvement-card {
+  text-align: left;
+}
+
+.involvement-icon {
+  display: inline-flex;
+  padding: 0.75rem;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 50%;
+  color: #8b5cf6;
+  margin-bottom: 1rem;
+}
+
+.involvement-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.involvement-description {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.involvement-skills {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.involvement-skills strong {
+  color: #8b5cf6;
+}
