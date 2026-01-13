@@ -1,6 +1,6 @@
 .footer {
-  background: rgba(10, 10, 10, 0.95);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(26, 26, 26, 0.95);
+  border-top: 1px solid rgba(249, 115, 22, 0.2);
   padding: 2rem;
   text-align: center;
 }
@@ -11,6 +11,6 @@
 }
 
 .footer-content p {
-  color: #9ca3af;
+  color: #94a3b8;
   font-size: 0.9rem;
 }

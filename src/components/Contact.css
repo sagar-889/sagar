@@ -6,7 +6,7 @@
 .contact-intro {
   text-align: center;
   font-size: 1.1rem;
-  color: #d1d5db;
+  color: #cbd5e1;
   margin-bottom: 3rem;
 }
 
@@ -21,8 +21,8 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1.5rem;
-  background: rgba(59, 130, 246, 0.05);
-  border: 1px solid rgba(59, 130, 246, 0.1);
+  background: rgba(249, 115, 22, 0.05);
+  border: 1px solid rgba(249, 115, 22, 0.1);
   border-radius: 8px;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -31,19 +31,19 @@
 }
 
 .contact-item:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: rgba(59, 130, 246, 0.3);
+  background: rgba(249, 115, 22, 0.1);
+  border-color: rgba(249, 115, 22, 0.3);
   transform: translateY(-2px);
 }
 
 .contact-item svg {
-  color: #3b82f6;
+  color: #f97316;
   flex-shrink: 0;
 }
 
 .contact-item h4 {
   font-size: 0.9rem;
-  color: #9ca3af;
+  color: #94a3b8;
   margin-bottom: 0.25rem;
 }
 

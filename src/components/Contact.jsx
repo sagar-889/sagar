@@ -33,7 +33,7 @@ const Contact = () => {
             <MapPin size={24} />
             <div>
               <h4>Location</h4>
-              <p>Sankhavaram, East Godavari - 533446</p>
+              <p>Sankhavaram, East Godavari </p>
             </div>
           </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
             <Github size={24} />
             <div>
               <h4>GitHub</h4>
-              <p>kandasagar</p>
+              <p>Sagar Kanda</p>
             </div>
           </a>
 
