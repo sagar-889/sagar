@@ -1,43 +1,79 @@
 import React from 'react'
-import { Code, Database, Palette, Wrench, Upload, Users } from 'lucide-react'
+import { Code, Database, Palette, Wrench, Upload } from 'lucide-react'
 import './Skills.css'
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: <Code size={24} />,
-      title: 'Languages',
-      skills: ['C', 'Java', 'Python', 'HTML', 'CSS', 'JavaScript']
+      title: 'Programming Languages',
+      skills: [
+        { name: 'C', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
+        { name: 'Java', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+        { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' }
+      ]
     },
     {
       icon: <Database size={24} />,
-      title: 'Database',
-      skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'Firebase']
+      title: 'Frontend',
+      skills: [
+        { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+        { name: 'HTML5', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+        { name: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+        { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+        { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+        { name: 'Responsive Design', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' }
+      ]
+    },
+    {
+      icon: <Database size={24} />,
+      title: 'Backend & Database',
+      skills: [
+        { name: 'JWT Authentication', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+        { name: 'Web3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ethereum/ethereum-original.svg' },
+        { name: 'Blockchain', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitcoin/bitcoin-original.svg' },
+        { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+        { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+        { name: 'PostgreSQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+        { name: 'Firebase', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' }
+      ]
     },
     {
       icon: <Palette size={24} />,
-      title: 'Styling',
-      skills: ['CSS', 'Tailwind CSS']
+      title: 'Styling & Design',
+      skills: [
+        { name: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' },
+        { name: 'Responsive Design', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+        { name: 'UI/UX Principles', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' }
+      ]
     },
     {
       icon: <Palette size={24} />,
-      title: 'UI/UX',
-      skills: ['Figma', 'Canva']
+      title: 'Design Tools',
+      skills: [
+        { name: 'Figma', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+        { name: 'Canva', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg' }
+      ]
     },
     {
       icon: <Wrench size={24} />,
-      title: 'Tools',
-      skills: ['Git', 'GitHub', 'VS Code', 'Windsurf', 'Kiro']
+      title: 'Development Tools',
+      skills: [
+        { name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+        { name: 'GitHub', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+        { name: 'VS Code', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
+        { name: 'Windsurf', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg' },
+        { name: 'Kiro', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg' }
+      ]
     },
     {
       icon: <Upload size={24} />,
-      title: 'Deployment',
-      skills: ['Vercel', 'Render']
-    },
-    {
-      icon: <Users size={24} />,
-      title: 'Soft Skills',
-      skills: ['Team Management', 'Problem Solving', 'Communication', 'Interpersonal Skills']
+      title: 'Deployment & DevOps',
+      skills: [
+        { name: 'Vercel', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg' },
+        { name: 'Render', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' }
+      ]
     }
   ]
 
@@ -47,11 +83,16 @@ const Skills = () => {
       <div className="skills-grid">
         {skillCategories.map((category, index) => (
           <div key={index} className="skill-category card">
-            <div className="skill-icon">{category.icon}</div>
-            <h3>{category.title}</h3>
+            <div className="skill-header">
+              <div className="skill-icon">{category.icon}</div>
+              <h3>{category.title}</h3>
+            </div>
             <div className="skill-tags">
               {category.skills.map((skill, i) => (
-                <span key={i} className="skill-tag">{skill}</span>
+                <span key={i} className="skill-tag">
+                  <img src={skill.logo} alt={skill.name} className="skill-logo" />
+                  <span>{skill.name}</span>
+                </span>
               ))}
             </div>
           </div>
