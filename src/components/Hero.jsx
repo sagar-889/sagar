@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="hero-title">
           Hi, I'm <span className="gradient-text">Sagar Kanda</span>
         </h1>
-        <p className="hero-subtitle">Aspiring Developer | AI & Data Science Student</p>
+        <p className="hero-subtitle">Web & App Designer | Prompt Engineer | AI & Data Science Student</p>
         <p className="hero-description">
           Passionate learner solving real-world problems with technology. 
           Building practical applications with modern tools and frameworks.
